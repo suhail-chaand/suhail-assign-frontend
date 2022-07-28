@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+$bg-color-light: #ffffff;
+$bg-color-dark: #020202;
+@mixin font-setting($font-weight,
+$font-size,
+$line-height,
+$font-color: #000000) {
+    font-family: 'Poppins', sans-serif;
+    font-weight: $font-weight;
+    font-size: $font-size;
+    color: $font-color;
+    line-height: $line-height;
+}

@@ -1,0 +1,12 @@
+.product-details {
+    position: absolute;
+    top: 136px;
+    right: 0;
+    left: 0;
+}
+
+@media screen and (max-width: 576px) {
+    .product-details {
+        top: 104px;
+    }
+}

@@ -1,0 +1,40 @@
+@import 'src/assets/_variables';
+.navbar {
+    top: 44px;
+    height: 92px;
+    padding: 0;
+    background-color: $bg-color-light;
+}
+
+.container {
+    background-color: $bg-color-light;
+}
+
+.navbar-toggler {
+    border: none;
+    &:focus {
+        border: solid 1px grey;
+        box-shadow: none;
+    }
+}
+
+.nav-link {
+    @include font-setting(600, 14px, 21px);
+    &:hover {
+        transform: scale(1.02);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .navbar {
+        top: 40px;
+        height: 64px;
+    }
+    .navbar-toggler,
+    img {
+        transform: scale(0.6);
+    }
+    .nav-link {
+        @include font-setting(500, 12px, 18px)
+    }
+}

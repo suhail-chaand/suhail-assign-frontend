@@ -1,0 +1,25 @@
+@import 'src/assets/_variables';
+.fixed-top {
+    height: 44px;
+    background-color: $bg-color-dark;
+}
+
+.container,
+.d-flex {
+    height: inherit;
+}
+
+p {
+    @include font-setting(600, 12px, 18px, #ffffff);
+    margin: 0;
+}
+
+span {
+    color: #A2A6B0;
+}
+
+@media screen and (max-width: 576px) {
+    .fixed-top {
+        height: 40px;
+    }
+}
