@@ -1,12 +1,44 @@
+@import 'src/assets/_variables';
 .product-details {
-    position: absolute;
-    top: 136px;
-    right: 0;
-    left: 0;
+    position: relative;
+    top: $contact-height-lg;
+}
+
+.header {
+    top: $contact-height-lg;
+    height: 72px;
+    background-color: $bg-color-light;
+    .container {
+        height: inherit;
+        .row {
+            height: inherit;
+        }
+    }
+}
+
+.details {
+    height: 100vh;
+    background-image: linear-gradient(90deg, $bg-color-secondary 50%, white 50%);
+    .container {
+        height: inherit;
+        .row {
+            height: inherit;
+        }
+    }
+}
+
+.details-left {
+    background-color: $bg-color-secondary;
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 576px) {
     .product-details {
-        top: 104px;
+        top: $contact-height-sm;
     }
 }

@@ -1,6 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+// screen width
+$sw-md: 720px;
+// navbar heights
+$contact-height-lg: 44px;
+$contact-height-sm: 40px;
+$navbar-height-lg: 92px;
+$navbar-height-sm: 64px;
+// background colors
 $bg-color-light: #ffffff;
 $bg-color-dark: #020202;
+$bg-color-secondary: #F5F7FF;
+// mixins
 @mixin font-setting($font-weight,
 $font-size,
 $line-height,

@@ -1,9 +1,9 @@
 @import 'src/assets/_variables';
 .navbar {
-    top: 44px;
-    height: 92px;
-    padding: 0;
+    top: $contact-height-lg;
+    height: $navbar-height-lg;
     background-color: $bg-color-light;
+    padding: 0;
 }
 
 .container {
@@ -27,8 +27,10 @@
 
 @media screen and (max-width: 576px) {
     .navbar {
-        top: 40px;
-        height: 64px;
+        position: sticky;
+        top: $contact-height-sm;
+        height: $navbar-height-sm;
+        z-index: 1;
     }
     .navbar-toggler,
     img {

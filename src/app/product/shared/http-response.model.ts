@@ -1,6 +1,8 @@
+import { ProductModel } from "./product.model"
+
 export interface HttpResponseModel {
     status: number,
     message: string,
-    data: object | null
+    data: ProductModel | object | null
     error: object | null
 }
