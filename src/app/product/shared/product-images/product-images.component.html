@@ -1,0 +1,18 @@
+<div #carousel id="carousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <ng-container *ngFor="let image of images; let i = index">
+            <button *ngIf="i == 0" type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
+            <button *ngIf="i != 0" type="button" data-bs-target="#carousel" [attr.data-bs-slide-to]="i"></button>
+        </ng-container>
+    </div>
+    <div class="carousel-inner" ng-controller="CarouselDemoCtrl">
+        <ng-container *ngFor="let image of images; let i = index">
+            <div *ngIf="i == 0" class="carousel-item active" data-bs-interval="1000">
+                <img src={{image.image_url}} class="d-block w-100" alt="...">
+            </div>
+            <div *ngIf="i != 0" class="carousel-item" data-bs-interval="1000">
+                <img src={{image.image_url}} class="d-block w-100" alt="...">
+            </div>
+        </ng-container>
+    </div>
+</div>

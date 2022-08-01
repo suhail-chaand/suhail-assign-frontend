@@ -1,0 +1,13 @@
+<div class="d-flex justify-content-lg-end justify-content-center" *ngIf="product">
+    <div class="row align-items-center">
+        <div class="col">
+            <p class="price">Price <span>{{product.price | currency}}</span></p>
+        </div>
+        <div class="col-auto">
+            <input class="form-control quantity" type="number" min="1" max="11" [(ngModel)]="quantity" onKeyDown="return false">
+        </div>
+        <div class="col">
+            <button type="button" class="btn btn-primary buy-now" (click)="checkout()">Buy now</button>
+        </div>
+    </div>
+</div>

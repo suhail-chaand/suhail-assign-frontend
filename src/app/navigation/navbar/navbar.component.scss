@@ -4,6 +4,7 @@
     height: $navbar-height-lg;
     background-color: $bg-color-light;
     padding: 0;
+    z-index: 1;
 }
 
 .container {
@@ -25,12 +26,17 @@
     }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: $screen-width-lg) {
+    .navbar {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    }
+}
+
+@media screen and (max-width: $screen-width-md) {
     .navbar {
         position: sticky;
         top: $contact-height-sm;
         height: $navbar-height-sm;
-        z-index: 1;
     }
     .navbar-toggler,
     img {

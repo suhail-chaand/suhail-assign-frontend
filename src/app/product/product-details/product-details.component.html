@@ -2,25 +2,41 @@
     <!--Header-->
     <div class="sticky-top header">
         <div class="container">
-            <div class="row">
+            <div class="row align-items-center">
                 <div class="col-md-7 header-left">
-                    <div class="row ps-5">
-                        <div class="col">
-                            About Product
-                        </div>
+                    <div class="mx-xl-5 ps-xl-5 mx-lg-3">
+                        <span class="about-product">About Product</span>
                     </div>
                 </div>
-                <div class="col-md-5 header-right"></div>
+                <div class="col-md-5 header-right">
+                    <app-buy-now [product]="product"></app-buy-now>
+                </div>
             </div>
         </div>
     </div>
     <!--Body-->
-    <div class="details">
+    <div class="mt-lg-0 mt-5 details">
         <div class="container">
-            <div class="row">
-                <div class="col-md-5 order-md-2 details-right"></div>
-                <div class="col-md-7 order-md-1 details-left"></div>
+            <div class="row align-items-center">
+                <div class="col-lg-5 order-lg-2 details-right">
+                    <app-product-images [images]="product.images"></app-product-images>
+                </div>
+                <div class="col-lg-7 order-lg-1 details-left">
+                    <div class="mx-xl-5 ps-xl-5 mx-lg-3 my-5 pb-5 detail">
+                        <span class="about-product">About Product<br></span>
+                        <p class="brand">{{product.brand}} Product</p><br>
+                        <p class="name">{{product.name}}</p>
+                        <p class="tagline">{{product.tagline}}</p>
+                        <ul class="description">
+                            <li *ngFor="let point of product.description.split('*')">{{point}}</li>
+                        </ul><br>
+                        <p class="model">{{product.model}}</p>
+                    </div>
+                </div>
             </div>
         </div>
+    </div>
+    <div class="container buy-now-bottom">
+        <app-buy-now [product]="product"></app-buy-now>
     </div>
 </div>

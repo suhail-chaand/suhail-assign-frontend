@@ -1,0 +1,21 @@
+.carousel-indicators {
+    bottom: -50px;
+    z-index: 0;
+    button {
+        width: 6px;
+        height: 6px;
+        border-radius: 100%;
+        background-color: #CACDD8;
+        &.active {
+            background-color: #0156FF;
+        }
+    }
+}
+
+.carousel-inner {
+    margin-bottom: 50px;
+}
+
+.carousel-item {
+    transition: none;
+}

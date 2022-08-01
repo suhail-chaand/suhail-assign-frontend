@@ -1,0 +1,5 @@
+<div class="container mt-5">
+    <div class="row justify-content-center" *ngFor="let image of images">
+        <img *ngIf="image.code == code" src={{image.image}} alt="{{image.code}} Error" style="width: 50%">
+    </div>
+</div>
