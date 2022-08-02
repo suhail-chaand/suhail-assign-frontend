@@ -68,6 +68,22 @@
     }
 }
 
+.modal-dialog {
+    height: 60vh;
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.success-title {
+    @include font-setting(700, 24px, 30px)
+}
+
+.success-message {
+    @include font-setting(300, 18px, 30px)
+}
+
 @media screen and (max-width: $screen-width-lg) {
     .header {
         display: none;

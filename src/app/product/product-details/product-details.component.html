@@ -40,3 +40,20 @@
         <app-buy-now [product]="product"></app-buy-now>
     </div>
 </div>
+<!-- Order status modal -->
+<div #modal id="modal" class="modal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="row justify-content-center modal-body">
+                <div class="col text-center">
+                    <img src="assets/images/purchase-success.png"><br><br>
+                    <p class="success-title">Purchase Successful</p><br>
+                    <p class="success-message">You will get your product soon!<br><br> Get ready to experience the spatial audio with adaptive EQ that tunes music to your ears.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
