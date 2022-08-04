@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 
 import { BuyNowComponent } from './buy-now.component';
 
@@ -8,9 +9,10 @@ describe('BuyNowComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ BuyNowComponent ]
+      declarations: [BuyNowComponent],
+      imports: [HttpClientTestingModule],
     })
-    .compileComponents();
+      .compileComponents();
   });
 
   beforeEach(() => {
